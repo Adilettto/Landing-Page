@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Inter:wght@300;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Teploseti</title>
 </head>
 
@@ -27,17 +27,23 @@
 
             <div style=" margin-top: 20px; display: flex; flex-direction: row; gap: 5px;">
                 <p class="lang-switch">Язык:</p>
-                <img style="width: 24px; height: 11px; padding-top: 18px;" src="assets/kg-flag.png" alt="kg">
-                <img style="width: 24px; height: 11px; padding-top: 18px;" src="assets/ru-flag.png" alt="ru">
+                <img class="lang-items" src="assets/kg-flag.png" alt="kg">
+                <img class="lang-items" src="assets/ru-flag.png" alt="ru">
+                <img class="bars" src="assets/bars-solid.svg" alt="bars">
             </div>
 
         </nav>
 
         <div class="main-bar">
-            <p class="main-name">Теплосети</p>
-            <p class="teplo-desc">Тепло в каждый уголок нашей страны</p>
-            <p class="learn-more"><a style="color: inherit; text-decoration: none;" href="sidepage.html">Подробнее o
-                    нас</a></p>
+            <div class="main-bar-text">
+                <p class="main-name">Теплосети</p>
+                <p class="teplo-desc">Тепло в каждый уголок нашей страны</p>
+                <p class="main-learn-more learn-more"><a style="color: inherit; text-decoration: none;"
+                        href="sidepage.html">Подробнее o
+                        нас</a></p>
+            </div>
+
+            <img src="assets/promo.png" alt="builders">
         </div>
 
         <div class="post-nav">
@@ -105,12 +111,12 @@
         </div>
 
         <div class="extra-container">
-            <div class="big-box">
-                <img style="width: 850px;" src="assets/mountains.png" alt="mountains">
+            <div class="big-box first-big-box">
+                <img class="box-image" src="assets/mountains.png" alt="mountains">
                 <div class="article">
-                    <div style="padding-left: 48px;">
-                        <p style="font-size: 28px; font-weight: bold;">Как мы начинали?</p>
-                        <p style="font-size: 14px; color: #B6B6B6; font-weight: 400;">
+                    <div class="article-box">
+                        <p class="topic">Как мы начинали?</p>
+                        <p class="description">
                             Методологический подход к экологии как к науке позволяет выделить предмет, задачи и методы
                             исследований.
                             Объекты исследования экологии — в основном, системы выше уровня отдельных организмов:
@@ -120,24 +126,21 @@
                             таких систем.
                             Главная задача прикладной экологии —
                         </p>
-                        <p style="font-size: 14px; width: 195px; 
-                                color: rgba(15, 42, 89, 1);
-                                border: 2px solid rgba(15, 42, 89, 1);
-                                font-weight: bold;" class="learn-more"><a
-                                style="color: inherit; text-decoration: none;" href="sidepage.html">Подробнее o нас</a>
+                        <p class="big-box-button"><a style="color: inherit; text-decoration: none;"
+                                href="sidepage.html">Подробнее o нас</a>
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div style="display: flex; justify-content: flex-end;" class="big-box">
-                <img style="width: 850px; " src="assets/night-fabric.png" alt="mountains">
+            <div class="big-box middle-big-box">
+                <img class="box-image" " src=" assets/night-fabric.png" alt="mountains">
                 <div style="left: 64px;" class="article">
-                    <div style="padding-left: 48px; padding-right: 48px;">
-                        <p style="font-size: 28px; font-weight: bold;">Наша дальнейшая цель
+                    <div class="article-box">
+                        <p class="topic">Наша дальнейшая цель
                             и будущее
                         </p>
-                        <p style="font-size: 14px; color: #B6B6B6; font-weight: 400;">
+                        <p class="description">
                             Методологический подход к экологии как к науке позволяет выделить предмет, задачи и методы
                             исследований.
                             Объекты исследования экологии — в основном, системы выше уровня отдельных организмов:
@@ -147,22 +150,19 @@
                             таких систем.
                             Главная задача прикладной экологии —
                         </p>
-                        <p style="font-size: 14px; width: 195px; 
-                                color: rgba(15, 42, 89, 1);
-                                border: 2px solid rgba(15, 42, 89, 1);
-                                font-weight: bold;" class="learn-more"><a
-                                style="color: inherit; text-decoration: none;" href="sidepage.html">Подробнее o нас</a>
+                        <p class="big-box-button"><a style="color: inherit; text-decoration: none;"
+                                href="sidepage.html">Подробнее o нас</a>
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="big-box">
-                <img style="width: 850px;" src="assets/electrician.png" alt="mountains">
+                <img class="box-image" src="assets/electrician.png" alt="mountains">
                 <div class="article">
-                    <div style="padding-left: 48px;">
-                        <p style="font-size: 28px; font-weight: bold;">Кто мы?</p>
-                        <p style="font-size: 14px; color: #B6B6B6; font-weight: 400;">
+                    <div class="article-box">
+                        <p class="topic">Кто мы?</p>
+                        <p class="description">
                             Методологический подход к экологии как к науке позволяет выделить предмет, задачи и методы
                             исследований.
                             Объекты исследования экологии — в основном, системы выше уровня отдельных организмов:
@@ -172,11 +172,8 @@
                             таких систем.
                             Главная задача прикладной экологии —
                         </p>
-                        <p style="font-size: 14px; width: 195px; 
-                                color: rgba(15, 42, 89, 1);
-                                border: 2px solid rgba(15, 42, 89, 1);
-                                font-weight: bold;" class="learn-more"><a
-                                style="color: inherit; text-decoration: none;" href="sidepage.html">Подробнее o нас</a>
+                        <p class="big-box-button"><a style="color: inherit; text-decoration: none;"
+                                href="sidepage.html">Подробнее o нас</a>
                         </p>
                     </div>
                 </div>
@@ -188,25 +185,29 @@
 
     <footer>
         <div class="contacts">
-            <p style="font-size: 24px; font-weight: bold; padding-left: 18px;">Наши контакты</p>
+            <p class="footer-heading">Наши контакты</p>
             <ul style="list-style-image: url(assets/phone-icon.png);">
-                <li>+996 (777) 44 55 66</li>
-                <li>+996 (777) 44 55 66</li>
-                <li>+996 (777) 44 55 66</li>
+                <li><a href="#">+996 (777) 44 55 66</a></li>
+                <li><a href="#">+996 (777) 44 55 66</a></li>
+                <li><a href="#">+996 (777) 44 55 66</a></li>
             </ul>
+            <hr class="hr-line">
 
             <ul>
-                <li style="list-style-image: url(assets/facebook-icon.png);">Facebook</li>
-                <li style="list-style-image: url(assets/facebook-icon.png);">Instagram</li>
-                <li style="list-style-image: url(assets/youtube.png);">Youtube</li>
+                <li style="list-style-image: url(assets/facebook-icon.png);"><a href="#">Facebook</a></li>
+                <li style="list-style-image: url(assets/facebook-icon.png);"><a href="#">Instagram</a></li>
+                <li style="list-style-image: url(assets/youtube.png);"><a href="#">Youtube</a></li>
             </ul>
+            <hr class="hr-line">
 
             <ul>
-                <li style="list-style-image: url(assets/location.png);">Бишкек, пр.Чуй</li>
+                <li style="list-style-image: url(assets/location.png);"><a
+                        href="https://2gis.kg/bishkek/geo/15763337430171705" target="_blank">Бишкек, пр.Чуй</a></li>
             </ul>
+            <hr class="hr-line">
         </div>
 
-        <img style="width:860px; height:340px;" src="assets/map.png" alt="map">
+        <img src="assets/map.png" alt="map">
     </footer>
 
 
