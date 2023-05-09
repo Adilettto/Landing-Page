@@ -20,6 +20,13 @@ nav {
 
 }
 
+.language-section {
+    margin-top: 20px; 
+    display: flex; 
+    flex-direction: row; 
+    gap: 5px;
+}
+
 @media only screen and (max-width: 480px) {
     nav {
         flex-direction: column;
@@ -32,11 +39,25 @@ nav {
 .nav-items {
     margin: 25px;
     font-size: 14px;
-    gap: 20px;
     display: flex;
     flex: row;
     list-style: none;
     margin-top: 30px;
+}
+
+.nav-list  {
+    border-left: 0.1px solid rgb(148, 135, 135);
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style-image: url(../assets/Stroke\ 1.png);
+    direction: rtl;
+}
+
+.nav-list-about {
+    color: inherit; 
+    padding-right: 20px;
+    list-style-image: url(../assets/Stroke\ 1.png);
+    direction: rtl;
 }
 
 .lang-items {
@@ -53,6 +74,7 @@ nav {
 .bars {
     display: none;
 }
+
 
 @media only screen and (max-width: 480px) {
 
@@ -90,13 +112,54 @@ nav {
     justify-content: flex-start;
     align-items: center;
     padding-left: 110px;
+    position: relative;
 }
 
-.main-bar img {
+.left-arrow {
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: #Ffffff;
+    border: 1px solid #Ffffff;
+    position: absolute;
+    left: 20px;
+    top: 280px;
+}
+
+.left-arrow:hover {
+    background-color: #0F2A59;
+}
+
+.right-arrow {
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: #Ffffff;
+    border: 1px solid #Ffffff;
+    position: absolute;
+    right: 20px;
+    top: 280px;
+}
+
+.right-arrow:hover {
+    background-color: #0F2A59;
+}
+
+.main-bar .promo {
     max-width: 680px;
     height: 450px;
     padding-left: 150px;
     padding-top: 115px;
+}
+
+.carousel-dots {
+    max-width: 136px;
+    height: 45px;
+    position: absolute;
+    bottom: 10px;
+    left: 550px;
 }
 
 .main-bar-text {
@@ -113,11 +176,26 @@ nav {
         align-items: flex-start;
     }
 
-    .main-bar img {
+    .main-bar .promo {
         width: 200px;
         height: 120px;
         padding-left: 80px;
-        padding-top: 3px;
+        padding-top: 0;
+    }
+
+    .carousel-dots {
+        max-width: 70px;
+        height: 30px;
+        left: 150px;
+        top: 275px;
+    }
+
+    .left-arrow {
+        display: none;
+    }
+
+    .right-arrow {
+        display: none;
     }
 
     .main-learn-more {
@@ -195,6 +273,30 @@ nav {
     background-color: #0F2A59;
     color: #Ffffff;
     transform: scale(1.05);
+}
+
+.private-room {
+    border-left: 5px solid  #EBEBEB;
+    background-image: url(../assets/Work.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+.mid-nav-item {
+    border-left: 5px solid  #0F2A59;
+    background-image: url(../assets/Setting.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+.right-nav-item {
+    border-left: 5px solid  #0F2A59;
+    background-image: url(../assets//Tick\ Square.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
 }
 
 h4 {
